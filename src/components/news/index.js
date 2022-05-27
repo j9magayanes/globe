@@ -82,10 +82,10 @@ export function News() {
     <CardMedia component="img" height="200"  image={"https://lh3.googleusercontent.com/rsinNbEDPHC6RzCyBHdQJFgqWkkz0g_fb_iEqq2fcMad-orgGSZx_FjU65Q7m7IA6Wve_Hrts5IlGGlIuUzq75E"}/>
     <CardContent>
       <Typography gutterBottom variant="h5" component="div">
-        Jin
+        Test
       </Typography>
       <Typography variant="body2" color="text.secondary">
-        Jin
+        Test
       </Typography>
     </CardContent>
     <CardActions>

@@ -10,10 +10,6 @@
     z-index: 2;
     height: 85px;
   }
-
-  .canvas {
-    background-color: black;
-  }
   
   .latest {
     width: 100%;
@@ -148,6 +144,10 @@
   .form {
     color: white;
   }
+
+  .title {
+    color: aliceblue;
+  }
   
   .upday {
     font-family: Roboto;
@@ -156,21 +156,8 @@
     align-self: center;
     padding-right: 0.5rem;
     padding-left: 0.7rem;
+   
   }
-
-  .card {
-    margin: 10%;
-    justify-items: center;
-    align-content: center;
-    align-self: center;
-    text-align: center;
-    width: 75%;
-    height: 15;
-    border: inset;
-    border-color: burlywood;
-    border-radius: 5%;
-    margin-bottom: 1%;
-}
   /* 
   @media all and (max-width: 650px) {
     .newsListHeadline {

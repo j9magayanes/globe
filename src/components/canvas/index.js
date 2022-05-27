@@ -9,7 +9,9 @@ import { Earth } from '../earth';
 import { Pointer } from '../pointer';
 import { OrbitControls,Text } from '@react-three/drei';
 import { News } from '../news';
+import  Header  from '../header';
 /* import Nestedmodal from '../nestedmodal'; */
+import "./index.css";
 import { Canvas } from '@react-three/fiber';
 import { display } from '@mui/system';
 
@@ -72,17 +74,22 @@ function CanvasMap() {
 
   return (
       <>
+   
+    <Header  />
+    <div className='card'>
     <Card  />
+    </div>
+ 
     <CanvasContainer>  
-      <Canvas>
+      <Canvas className='canvas'>
         <Suspense fallback={null}>
-        <Pointer  position={[1.233332819069036, 1.5579254204556254, -0.22750503665938274]} name={"DE"}  color={0xffff00} onClick={handleOpen} />
+        {/* <Pointer  position={[1.233332819069036, 1.5579254204556254, -0.22750503665938274]} name={"DE"}  color={0xffff00} onClick={handleOpen} /> */}
         <OrbitControls/>
           <Earth  />
         </Suspense>
       </Canvas>
     </CanvasContainer>
-  
+    
       </>
   );
 }
