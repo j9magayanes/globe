@@ -1,5 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 
 const TopSectionContainer = styled.div`
   position: absolute;
@@ -61,6 +67,7 @@ const DonateButton = styled.button`
   }
 `;
 
+
 const MadeBy = styled.h3`
   color: #fff;
   position: fixed;
@@ -71,15 +78,19 @@ const MadeBy = styled.h3`
 
 export function News() {
   return (
-    <TopSectionContainer>
-      <Logo>Global Warming</Logo>
-      <Slogan>Keep it cool for safe living</Slogan>
-      <Paragraph>
-        You can help us cool off our world and have it go back to it's best
-        state ever by donating to help fix our only world and our beloved EARTH!
-        Be cool and let the earth be cool. Let the ice burgs to live. Globe is
-        warming and will set to fire. Stop polluting, it will cost extra.
-      </Paragraph>
-    </TopSectionContainer>
+    <Card sx={{ maxWidth: 300, border: "none", boxShadow: "none", margin: "1px" }} >
+    <CardMedia component="img" height="200"  image={"https://lh3.googleusercontent.com/rsinNbEDPHC6RzCyBHdQJFgqWkkz0g_fb_iEqq2fcMad-orgGSZx_FjU65Q7m7IA6Wve_Hrts5IlGGlIuUzq75E"}/>
+    <CardContent>
+      <Typography gutterBottom variant="h5" component="div">
+        Jin
+      </Typography>
+      <Typography variant="body2" color="text.secondary">
+        Jin
+      </Typography>
+    </CardContent>
+    <CardActions>
+      <Button size="small">Learn More</Button>
+    </CardActions>
+  </Card>
   );
 }
